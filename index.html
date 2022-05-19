@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Hot Beans</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#careers" class="navbar__links" id="careers-page">Careers</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#ourteam" class="navbar__links" id="ourteam-page">Our Team</a>
+                    <li class="navbar__item">
+                        <a href="#courses" class="navbar__links" id="courses-page">Courses</a>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Home Section-->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">About Us</h1>
+            <p class="hero__description">Established in 2016, Hotbeans* is a software warehouse specialising in website design. Over the years however we are expanding into native apps for mobile devices. Over the years we have seen an expansion in the app market in retail, education,
+                health care, manufacturing and agriculture. We have a niche market in software for the agriculture market in particular working closely with the NFU (National Farmers Union). Are you someone who have completed training courses or qualifications
+                related to web development and are now looking for a job as a web developer? You have come to the right place, check out our Job Roles section and is you are interested, apply for one of our jobs by sending us a summary of your details.
+                New to website design? Please check out our recommended online courses.
+            </p>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="main" id="careers">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"></div>
+                <div class="main__img--card"></div>
+                <div class="main__img--card"></div>
+                <div class="main__img--card"></div>
+                <div class="main__img--card"></div>
+                <div class="main__img--card"></div>
+                <div class="main__img--card"></div>
+                <div class="main__img--card"></div>
+            </div>
+            <div class="main__content">
+                <h1>Web Designer</h1>
+                <p>If "designer" is in the title, the job is designing. Literally deciding and implementing how websites look and work. "Web" is in the title because the job is specifically focused on applications hosted on the internet. Specific skills
+                    would be design-tools-of-choice (e.g. Abobe Creative Cloud), HTML, CSS, and light JavaScript. If the job is also designing for print, apps, signage, products, clothing, etc., the title would be widened to Graphic Designer. This job
+                    role requires someone with a keen eye for detail, creativity, adaptability and good understanding of the need to optimise assets for the task at hand.
+                </p>
+
+                <h1>Front End Developer</h1>
+                <p>This job is focused on HTML, CSS, JavaScript, and light backend work. Not design. The lack of "designer" in the title is intentional. Because the job doesn't require design, deeper skill in the other technologies is implied. You likely
+                    have a grasp on some concepts beyond the core technologies, for instance regression testing or performance. A synonym might be Front End Engineer. I tend to think of that as a requiring a deeper and more specific skillset, possibly
+                    with more narrow focus or at a higher level. Technology specific job titles may be also be appropriate here, like "JavaScript Developer" or "JavaScript Engineer" for a job where that is primarily what needs to be done. Although, none
+                    of the front end technologies live in a bubble so I generally prefer Front End Developer.
+                </p>
+
+                <h1>Web Developer</h1>
+                <p>This job is focused on back end work and working with languages specific to the web, like C++, C#, .NET, PHP, Ruby, Python, etc. Medium skill in database/server work, medium skill in JavaScript, light skill in HTML. This is very different
+                    from a Front End Developer as there is little working with the design and heavier on programming concepts and concerns, like security and structure.</p>
+
+                <h1>Full Stack Developer</h1>
+                <p>This job is a combination of front and back end work. Seriously though, not mostly one and a little of the other. Good crossover people are needed at organizations and this is a high end job.</p>
+
+                <h1>Content Strategist</h1>
+                <p>Rather than working directly on implementation, this job is about the structural design of websites. Things like the taxonomies, metadata, scheduling, and analysis of content. A synonym might be Information Architect. They might work with
+                    people who work with content in a more general way like a Writer, Copywriter, or Editor.</p>
+
+                <h1>IT Technician</h1>
+                <p>This job works with the actual computers and tech equipment. A hardware person.</p>
+
+                <h1>Dev Ops</h1>
+                <p>The job bridges the gap between IT and Developers. They handle things like server software, version control, deployment, build processes, and testing servers/processes. I wish this had a more job-title-y feeling to it. As it stands it
+                    sounds like what you would call the whole team of people with this job.</p>
+
+                <h1>Product Manager</h1>
+                <p>This job is about guiding the site as a whole (or a major feature of the site) toward a better future. Largely dealing with people and planning. A Project Manager would be similar but smaller in scope and possibly a temporary role rather
+                    than full job title. The product manager will work directly with the team developing the website, making decisions on behalf of the company and the client and answering any questions that the team or the client have about the product.
+                    This job mainly involves attending meetings, responding to emails and making phone calls. Having a good time management, organisational skills and an understanding about website design and it’s complexities is essential. </p>
+                <div class="form_container">
+                    <button type="submit" class="main__btn" onclick="openPopup()">Apply</button>
+                    <div class="form_popup" id="popup">
+
+                        <label for="firstname"><b>First Name</b></label>
+                        <input type="text" placeholder="First Name" name="firstname" required>
+
+                        <label for="lastname"><b>Last Name</b></label>
+                        <input type="text" placeholder="Last Name" name="lastname" required>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <h1>Upload CV
+                            <h1>
+                                <input type="file" id="cletter" name="applicant_cletter">
+
+                                <h1>Upload Cover Letter</h1>
+                                <input type="file" id="cv" name="applicant_cv">
+
+                                <button type="submit" class="submit_btn" onclick="closePopup()">Submit</button>
+                                <button type="close" class="close_btn" onclick="closePopup()">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="ourteam" id="ourteam">
+        <h1>Our Team</h1>
+        <div class="projects__wrapper">
+            <div class="projects__card">
+                <p>Mike is our Web Designer. Trained locally in our neighbouring college, Mike has a flare for the creative. He enjoys using adapting photographs using image editing software to great affect for use in about applications. </p>
+            </div>
+            <div class="projects__card">
+                <p>Tom is our Web Developer. Tom started creating website from a young age and enjoys using a range of programming skills to create his project. Tom hates is testing and documentation, but with Silvia’s support he gets the job done. </p>
+            </div>
+            <div class="projects__card">
+                <p>Our Front-End Developer is Claudia. She loves developing in HTML5, CSS3, JavaScript and C# and we often need to pull her away from screen to rest her eyes! What she can’t do with CSS is not worth knowing. Recently she has become an active
+                    member of Front-End Foxes and is a volunteer mentor for new female web developers worldwide. </p>
+            </div>
+            <div class="projects__card">
+                <p>Silvia is our Product Manager, who keeps our team on their toes helping to ensure that our products are produced to the highest quality and meeting the needs of our clients. He can be found anywhere in the building with a tablet and phone
+                    attached to her somehow, constantly answering queries. She enjoys holding daily product team briefings and now we are back in the office for most of the week, she supplies the refreshments too! </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="main" id="courses">
+        <div class="main__container">
+            <div class="main__content">
+                <ul>
+                    <li><a href="https://www.w3schools.com/">W3Schools Online Web Tutorials</a></li>
+                    <li><a href="https://www.codecademy.com/">Learn to Code - for Free | Codecademy</a></li>
+                    <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css">Intro to HTML/CSS: Making webpages | Computer programming | Khan Academy</a></li>
+                    <li><a href="https://www.freecodecamp.org/">Learn to Code — For Free — Coding Courses for Busy People (freecodecamp.org)</a></li>
+                    <li><a href="https://www.w3docs.com/">W3docs | Tutorials, Quizzes, Certificates, Frameworks, Solutions</a></li>
+                    <li><a href="https://docs.microsoft.com/en-gb/learn/browse/?terms=HTML&levels=beginner">Microsoft Learn</a></li>
+                    <li><a href="https://www.frontendfoxes.org/ourschool">Front-End Foxes School (frontendfoxes.org)</a></li>
+                </ul>
+            </div>
+            <div class="main__img--container">
+            </div>
+
+        </div>
+    </div>
+
+    <!---Contact Us-->
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
